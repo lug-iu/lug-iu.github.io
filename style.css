@@ -1,7 +1,9 @@
 /* global web styles */
-body {
+/*body {
     cursor: url(https://i.postimg.cc/KYkq6khz/cursor.png), auto;
 }
+    (Andrew) I don't think having a linux peguin as a cursor is such a good idea as it makes the website feel clunky to navigate
+*/ 
 
 html {
     scroll-behavior: smooth;
@@ -47,7 +49,7 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);;
 }
 
- .menuli {
+.menuli {
     list-style-type: none;
     float: left;
     color: black;
@@ -120,4 +122,16 @@ th,td {
 .outline{
     margin-bottom: 30px;
     padding: 5px;
+}
+
+/* Title of main page */
+
+.mainTitle{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.smallerTitle{
+    text-align: center;
+    padding-top: 50px;
 }
