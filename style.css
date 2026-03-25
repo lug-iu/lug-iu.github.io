@@ -17,6 +17,7 @@ hr {
     background-color: black;
     border: none;
     margin: 40px auto;
+    opacity: 1;
 }
 
 a {
@@ -96,7 +97,7 @@ th,td {
     background-color: #f0f0f0;
 }
 
-.event-description {
+.event-description1 {
     border: none;
     text-align: center;
     vertical-align: middle;
@@ -169,7 +170,7 @@ th,td {
     text-align: center;
 }
 
-.event-description {
+.event-description2 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;                      
