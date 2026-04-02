@@ -180,3 +180,10 @@ th,td {
     padding: 5px;
     text-align: center;
 }
+
+/* welcome page text */
+
+.text {
+    padding:5px;
+    margin: 20px;
+}
