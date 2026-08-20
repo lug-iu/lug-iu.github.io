@@ -2,10 +2,10 @@
 :root {
     --font-family: Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
     --color-light: white;
-    --color-dark: darkgrey;
+    /* yes this color is just an extremely dark version of the IU crimson */
+    --color-dark: #270000;
     --background-color: var(--color-dark);
-    --menu-color: var(--background-color);
-    --text-color: --color-light;
+    --text-color: var(--color-light);
     --link-color: blue;
 }
 /* global web styles */
@@ -34,11 +34,13 @@ hr {
 
 a {
     text-decoration: none;
-    color: #6f6f6f;
+    color: var(--background-color);
+    background-color: var(--text-color);
 }
 
 a:hover {
-    color: #000;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 /* layout */
@@ -52,41 +54,31 @@ main {
 /*  nav menu */
 
 .menu {
-    background-color: var(--menu-color);
+    background-color: var(--background-color);
     left: 0;
     width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
     display: flex;
-    color: black;
+    color: var(--text-color);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid var(--color-light);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);;
+    /* border-bottom: 1px solid var(--color-light); 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); */
 }
 
 .menu li {
     list-style-type: none;
     float: left;
-    color: black;
     display: inline;
+    padding: 1rem;
 }
 
-.menuli a {
+.menu li a {
     display: block;
-    color: black;
-    padding: 20px;
     text-align: center;
-    background-color: #bdbdbd;
-    text-decoration: none;
-    backdrop-filter: blur(2px);
-}
-
-.menuli a:hover {
-    background-color: #6f6f6f;
-    color: black;
 }
 
 /* Table */
