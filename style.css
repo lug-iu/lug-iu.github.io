@@ -41,9 +41,17 @@ a:hover {
     color: #000;
 }
 
+/* layout */
+main {
+    width: 100%;
+    padding: 1rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
 /*  nav menu */
 
-.menuul {
+.menu {
     background-color: var(--menu-color);
     left: 0;
     width: 100%;
@@ -59,7 +67,7 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);;
 }
 
-.menuli {
+.menu li {
     list-style-type: none;
     float: left;
     color: black;
