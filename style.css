@@ -1,8 +1,20 @@
+/* global variables */
+:root {
+    --font-family: Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
+    --color-light: white;
+    --color-dark: darkgrey;
+    --background-color: var(--color-dark);
+    --menu-color: var(--background-color);
+    --text-color: --color-light;
+    --link-color: blue;
+}
 /* global web styles */
 body {
-    cursor: url(https://i.postimg.cc/KYkq6khz/cursor.png), auto;
+    cursor: url(/images/cursor.png), auto;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
-
 html {
     scroll-behavior: smooth;
 }
@@ -32,7 +44,7 @@ a:hover {
 /*  nav menu */
 
 .menuul {
-    background-color: #bdbdbd;
+    background-color: var(--menu-color);
     left: 0;
     width: 100%;
     margin: 0;
@@ -43,8 +55,7 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #bebdbd;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--color-light);
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);;
 }
 
@@ -94,7 +105,7 @@ th,td {
     overflow: hidden;
     text-align: center;
     vertical-align: middle;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
 }
 
 .event-description1 {
@@ -175,7 +186,7 @@ th,td {
     text-overflow: ellipsis;
     white-space: normal;                      
     font-size: 13px;
-    color: #000;
+    color: var(--text-color);
     margin: 30px auto;
     padding: 5px;
     text-align: center;
