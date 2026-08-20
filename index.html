@@ -12,7 +12,7 @@
 <body>
     <nav>
         <ul class="menu">
-            <li><a href="index.html">Overview <i class="fa-solid fa-star"></i></a></li>
+            <li><a href="/">Overview <i class="fa-solid fa-star"></i></a></li>
             <li><a href="events.html">Events <i class="fa-solid fa-calendar"></i></a></li>
             <li><a href="officers.html">Officers <i class="fa-solid fa-user-group color"></i></a></li>
             <li><a href="history.html">History <i class="fa-solid fa-timeline"></i></a></li>
@@ -23,12 +23,11 @@
     </nav>
 
     <!--each of these sections has an id of 1-5 so that if we want to make a navbar we can-->
+    <!--should be migrated to more descriptive IDs over time...-->
     <main id="main">
-        <section class="container" id="section-one">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="smallerTitle">Welcome to</h3>
-                    <h2 class="mainTitle">Linux Users Group at Indiana University</h2>
+        <section id="section-one">
+            <h1><span class="smallertitle">Welcome to</span><br>
+            <span class="mainTitle">Linux Users Group at Indiana University</span></h1>
 
                     <img class="clubPhoto" src="main-photo.jpg">
                     <p class="text">Linux Users Group at Indiana University is a club for anyone that is interested in computing and
@@ -40,9 +39,7 @@
                         work with it at a technical level, and discuss and help each other with using it on computers.
                         Anyone is welcome, no matter your technical and computing skill level, even if you have never heard of Linux!
                     </p>
-                </div>
-
-            </div>
+        </section>
         </section>
         <section class="container" id="section-two">
             <h2>Events</h2>
