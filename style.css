@@ -1,3 +1,7 @@
+/* resets */
+* {
+    box-sizing: border-box;
+}
 /* global variables */
 :root {
     --font-family: Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
@@ -21,15 +25,6 @@ html {
 
 h2 {
     margin: 20px;
-}
-
-hr {
-    width: 85%;
-    height: 2px;
-    background-color: black;
-    border: none;
-    margin: 40px auto;
-    opacity: 1;
 }
 
 a {
@@ -59,7 +54,6 @@ main {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
     color: var(--text-color);
     position: sticky;
@@ -67,6 +61,12 @@ main {
     z-index: 1000;
     /* border-bottom: 1px solid var(--color-light); 
     box-shadow: 0 2px 4px rgba(0,0,0,0.05); */
+}
+
+@media (max-width: 45rem) {
+    .menu {
+        flex-direction: column;
+    }
 }
 
 .menu li {
