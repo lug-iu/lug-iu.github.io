@@ -112,7 +112,6 @@ th,td {
     text-align: center;
     vertical-align: middle;
     width: 600px;
-    color: black;
 }
 
 .profile{
@@ -184,7 +183,7 @@ th,td {
     text-overflow: ellipsis;
     white-space: normal;                      
     font-size: 13px;
-    color: var(--text-color);
+    color: black;
     margin: 30px auto;
     padding: 5px;
     text-align: center;
