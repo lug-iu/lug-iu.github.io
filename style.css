@@ -1,73 +1,80 @@
+/* resets */
+* {
+    box-sizing: border-box;
+}
+/* global variables */
+:root {
+    --font-family: Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
+    --color-light: white;
+    /* yes this color is just an extremely dark version of the IU crimson */
+    --color-dark: #270000;
+    --background-color: var(--color-dark);
+    --text-color: var(--color-light);
+    --link-color: blue;
+}
 /* global web styles */
 body {
-    cursor: url(https://i.postimg.cc/G2qDmd2t/cursor.png), auto;
+    cursor: url(https://i.postimg.cc/KYkq6khz/cursor.png), auto;
 }
-
 html {
     scroll-behavior: smooth;
 }
 
-h2 {
-    margin: 20px;
+h1 {
+    text-align: center;
 }
-
-hr {
-    width: 85%;
-    height: 2px;
-    background-color: black;
-    border: none;
-    margin: 40px auto;
-    opacity: 1;
-}
-
 a {
     text-decoration: none;
-    color: #6f6f6f;
+    color: var(--background-color);
+    background-color: var(--text-color);
 }
 
 a:hover {
-    color: #000;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* layout */
+main {
+    width: 100%;
+    padding: 1rem;
+    max-width: 50rem;
+    margin: 0 auto;
 }
 
 /*  nav menu */
 
-.menuul {
-    background-color: #bdbdbd;
+.menu {
+    background-color: var(--background-color);
     left: 0;
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
-    color: black;
+    color: var(--text-color);
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #bebdbd;
-    border-bottom: 1px solid #e0e0e0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);;
+    /* border-bottom: 1px solid var(--color-light); 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); */
 }
 
-.menuli {
+@media (max-width: 45rem) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+.menu li {
     list-style-type: none;
     float: left;
-    color: black;
     display: inline;
+    padding: 1rem;
 }
 
-.menuli a {
+.menu li a {
     display: block;
-    color: black;
-    padding: 20px;
     text-align: center;
-    background-color: #bdbdbd;
-    text-decoration: none;
-    backdrop-filter: blur(2px);
-}
-
-.menuli a:hover {
-    background-color: #6f6f6f;
-    color: black;
 }
 
 /* Table */
@@ -94,7 +101,7 @@ th,td {
     overflow: hidden;
     text-align: center;
     vertical-align: middle;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
 }
 
 .event-description1 {
@@ -125,14 +132,12 @@ th,td {
 
 /* Title of main page */
 
-.mainTitle{
-    text-align: center;
+.maintitle{
     padding-bottom: 50px;
 }
 
-.smallerTitle{
-    text-align: center;
-    padding-top: 50px;
+.smallertitle{
+    font-size: 0.75em;
 }
 
 .clubPhoto{
@@ -175,7 +180,7 @@ th,td {
     text-overflow: ellipsis;
     white-space: normal;                      
     font-size: 13px;
-    color: #000;
+    color: black;
     margin: 30px auto;
     padding: 5px;
     text-align: center;
@@ -186,4 +191,8 @@ th,td {
 .text {
     padding:5px;
     margin: 10px;
+}
+
+.event-title {
+    color: black;
 }
