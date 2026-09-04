@@ -31,7 +31,7 @@ a:hover {
 
 /*  nav menu */
 
-.menuul {
+.menu {
     background-color: #bdbdbd;
     left: 0;
     width: 100%;
@@ -48,14 +48,14 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);;
 }
 
-.menuli {
+.menu li {
     list-style-type: none;
     float: left;
     color: black;
     display: inline;
 }
 
-.menuli a {
+.menu li a {
     display: block;
     color: black;
     padding: 20px;
@@ -65,7 +65,7 @@ a:hover {
     backdrop-filter: blur(2px);
 }
 
-.menuli a:hover {
+.menu li a:hover {
     background-color: #6f6f6f;
     color: black;
 }
@@ -130,7 +130,7 @@ th,td {
     padding-bottom: 50px;
 }
 
-.smallerTitle{
+.smallertitle{
     text-align: center;
     padding-top: 50px;
 }
